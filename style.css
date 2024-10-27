@@ -233,7 +233,7 @@ main{
 }
 
 .provider-section h2{
-    padding-top: 150px;
+    padding-top: 100px;
     color: #fff;
     text-align: center;
     font-family: "Playfair Display";
@@ -250,21 +250,19 @@ main{
 .provider-section div:first-child{  
     position: relative;
     z-index: 2;
-    width: 516px;
-    height: 546px;
-    flex-shrink: 0;
+    width: 616px;
+    height: 646px;
     border-radius: 500px 500px 15px 15px;
-    background: #FDB733;
+    background: url(assets/provider-img.jpg) lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-    left: 400px;
+    left: 330px;
 }
 
 .provider-section .card div:nth-child(2){  
     position: absolute;
     z-index: 1;
-    width: 784px;
-    height: 466px;
-    flex-shrink: 0;
+    width: 984px;
+    height: 566px;
     border-radius: 15px;
     background: #FFFBEC;
     left: 650px;
@@ -293,4 +291,61 @@ main{
     background-color: #a8867d;
     border: 3px solid #a8867d;  
     color:white
+}
+
+/* Resource Section */
+
+
+.resource-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-wrap h2{
+    padding-top: 100px;
+    color: #0E2C25;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resource-wrap p {
+    color: #0E2C25;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.resource-wrap .resources{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 70px;
+}
+
+.resource-img{
+    width: 450px;
+    height: 500px;
+    flex-shrink: 0;
+    background-color: #0E2C25;
+}
+
+.resource-item:first-child .resource-img{
+    border-radius: 150px 15px 15px 15px;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+}
+.resource-item:nth-child(2) .resource-img{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+}
+.resource-item:nth-child(3) .resource-img{
+    border-radius: 15px 150px 15px 15px;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
 }
