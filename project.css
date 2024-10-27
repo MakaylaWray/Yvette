@@ -284,7 +284,7 @@ th,td{
 .contact-hero{
     height: 700px;
     margin-top: 10px;
-    background:linear-gradient(rgba(21, 67, 34, 0.8), rgba(255, 149, 95, 0.8)), url(assets/smiley-female-doctor-clinic-front-view.jpg);
+    background:linear-gradient(rgba(21, 67, 34, 0.8), rgba(255, 149, 95, 0.8)), url(assets/smiley-female-doctor-clinic-front-view.jpg); /*https://www.freepik.com/free-photo/smiley-female-doctor-clinic-front-view_33417227.htm#fromView=search&page=6&position=14&uuid=5bb30f43-2366-4122-b240-6294d176097e */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Moderustic", sans-serif;
@@ -294,4 +294,19 @@ th,td{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.form-wrap{
+    width: 800px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
 }

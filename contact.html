@@ -37,11 +37,24 @@
         <div class="contact-hero">
             <p>We'd love to hear from you</p>
         </div>
-        <section>
+        <section class="contact-wrap">
             <h2>Message Us</h2>
             <p>Fill out the form to send us a message.</p>
-            <div>
-                
+            <div class="form-wrap">
+                <p> Required fields are marked with an asterisk *</p>
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="fname">*First Name:</label>
+                    <input type="text" name="fname" required>
+                    <label for="lname">*Last Name:</label>
+                    <input type="text" name="lname" required>
+                    <label for="emails">*E-mail:</label>
+                    <input type="email" name="emails" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone">
+                    <label for="messages">*Message</label>
+                    <textarea required cols="20" rows="2" name="messages"></textarea>
+                    <input id="mySubmit" type="submit"></input>
+                </form>
             </div>
         </section>
         <footer>
