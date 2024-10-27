@@ -6,6 +6,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 button:hover, li:hover{
     cursor: pointer;
@@ -17,8 +19,8 @@ header{
 header a{
     flex-grow: 1;
     margin-top: 10px;
+    padding-left: 87px;
     margin-bottom: 0px;
-    margin-left: 87px;
     font-family: "Playfair Display", sans-serif;
     font-style: italic;
     font-size: 48px;
@@ -70,8 +72,8 @@ nav ul {
 }
 
 #nav-btn:hover{
-    background-color: #8b6b62;
-    border: 3px solid #8b6b62;
+    background-color: #a8867d;
+    border: 3px solid #a8867d;
     color:white
 }
 
@@ -101,7 +103,7 @@ main{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 87px;
+    padding-left: 87px;
     margin-bottom: 10px;
 }
 
@@ -112,7 +114,7 @@ main{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 100px;
+    padding-left: 100px;
     margin-bottom: 40px;
 }
 .right-hero{
@@ -141,8 +143,8 @@ main{
 }
 
 .btn-group button:first-child:hover{
-    background-color: #8b6b62;
-    border: 3px solid #8b6b62;  
+    background-color: #a8867d;
+    border: 3px solid #a8867d;  
     color:white
 }
 
@@ -185,4 +187,110 @@ main{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+
+/* Introduction Section */
+
+.intro-wrap{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.intro-wrap div {
+    width: 1300px;
+}
+.intro-wrap h2{
+    color: #0E2C25;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.intro-wrap p{
+    color: #0E2C25;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+/* Provider Section */
+
+.provider-section{
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    background-color: #0E2C25;
+}
+
+.provider-section h2{
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.provider-section .card{
+    display: flex;
+    margin-bottom: 50px;
+}
+.provider-section div:first-child{  
+    position: relative;
+    z-index: 2;
+    width: 516px;
+    height: 546px;
+    flex-shrink: 0;
+    border-radius: 500px 500px 15px 15px;
+    background: #FDB733;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+    left: 400px;
+}
+
+.provider-section .card div:nth-child(2){  
+    position: absolute;
+    z-index: 1;
+    width: 784px;
+    height: 466px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFFBEC;
+    left: 650px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+#provider-btn{
+    width: 264px;
+    height: 58px;
+    flex-shrink: 0;
+    color: #fff;
+    border-radius: 18px;
+    border: 3px solid #fff; 
+    background-color: transparent;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: center;
+}
+
+#provider-btn:hover{
+    background-color: #a8867d;
+    border: 3px solid #a8867d;  
+    color:white
 }
