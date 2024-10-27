@@ -7,12 +7,14 @@ body{
     width: 100%;
     height: 100%;
 }
-
+button:hover, li:hover{
+    cursor: pointer;
+}
 header{
     display: flex;
     width: 100%;
 }
-header h1{
+header a{
     flex-grow: 1;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -20,11 +22,13 @@ header h1{
     font-family: "Playfair Display", sans-serif;
     font-style: italic;
     font-size: 48px;
+    font-weight: 800;
     line-break: normal;
     color: #20473D;
     width: 173.666px;
     height: 67px;
     flex-shrink: 0;
+    text-decoration: none;
 }
 header nav{
     flex-grow: 2;
@@ -66,8 +70,8 @@ nav ul {
 }
 
 #nav-btn:hover{
-    background-color: #3e241d;
-    border: 3px solid #3e241d;  
+    background-color: #8b6b62;
+    border: 3px solid #8b6b62;
     color:white
 }
 
@@ -77,7 +81,7 @@ main{
 
 /* Landing Page */
 
-.hero{
+.hero-wrap{
     display: flex;
     height: 900px;
     width: 100%;
@@ -90,7 +94,7 @@ main{
     padding-bottom: 100px;
 }
 
-.left-hero h2{
+.left-hero h1{
     color: #0E2C25;
     font-family: "Playfair Display";
     font-size: 90px;
@@ -117,7 +121,6 @@ main{
 }
 
 .btn-group button{
-    margin-left: 100px;
     margin-top: 40px;
     width: 264px;
     height: 58px;
@@ -132,17 +135,19 @@ main{
 }
 
 .btn-group button:first-child{
+    margin-left: 100px;
     border-radius: 18px;
     border: 3px solid #20473D;  
 }
 
 .btn-group button:first-child:hover{
-    background-color: #3e241d;
-    border: 3px solid #3e241d;  
+    background-color: #8b6b62;
+    border: 3px solid #8b6b62;  
     color:white
 }
 
 .btn-group button:nth-child(2){
+    margin-left: 15px;
     border: none;
 }
 
@@ -156,4 +161,28 @@ main{
     background: url(assets/hero-img-fotor.jpg) lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
     flex-shrink: 0;
+}
+
+/* Data Section */
+
+.data-wrap{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0E2C25;
+    width: 100%;
+}
+
+.data-items{
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.data-items span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
