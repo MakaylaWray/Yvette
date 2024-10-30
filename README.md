@@ -29,7 +29,7 @@ To run the website locally, follow these steps:
      - This will create a local copy of the repository on your computer.
    
    - **Option 2: Download as ZIP**
-     - Go to the GitHub repository page: []().
+     - Go to the GitHub repository page: [https://github.com/MakaylaWray/Yvette](https://github.com/MakaylaWray/Yvette).
      - Click on the **Code** button and select **Download ZIP**.
      - Once downloaded, unzip the file by right-clicking and selecting **Extract All** (Windows) or double-clicking it (macOS).
 
