@@ -24,7 +24,7 @@ To run the website locally, follow these steps:
    - **Option 1: Clone the Repository (recommended)**
      - Open a terminal and run the following command:
        ```bash
-       git clone 
+       git clone git@github.com:MakaylaWray/Yvette.git
        ```
      - This will create a local copy of the repository on your computer.
    
