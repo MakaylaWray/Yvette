@@ -3,80 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project.css">
+    <meta name="theme-color" content="#0E2C25" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
     </style>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-        </style>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     </style>
-    
-    <title>Yvette</title>
-    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <nav class="nav-wrapper">
-            <a href="index.html"><img src="assets/image-21_processed.png" class="logo-img" alt="Yvette Logo"></a>
-            <h1 class="logo-name">Yvette</h1>
-            <div>
-                <ul id="main-nav" class="nav-bar">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="support.html">Find Support</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="community.html">Community</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button>Find Provider</button>
+<body id="landing-page">
+  <header>
+    <a href="index.html">Yvette.</a>
+    <nav>
+        <ul>
+            <li><a href="about.html" class="nav-items">About</a></li>
+            <li><a href="support.html" class="nav-items">Find Support</a></li>
+            <li><a href="resources.html" class="nav-items">Resources</a></li>
+            <li><a href="community.html" class="nav-items">Community</a></li>
+            <li><a href="contact.html" class="nav-items">Contact</a></li>
+            <button id="nav-btn">Find a Provider</button>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-wrap">
+        <div class="left-hero">
+            <h1>You<br>Deserve<br>To Be Heard</h1>
+            <p>A Powerful Guide for Women of Color to <br>Confidently Self-Advocate in Healthcare</p>
+            <div class="btn-group">
+                <button>Find a Provider</button>
+                <button>Explore Resources</button>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="hero-section">
-            <div class="left-hero">
-                <div class="left-content">
-                    <h2> Welcome to Yvette </h2>
-                    <p> A personal guide to finding the appropriate resources to self-adovocate 
-                        as a woman of color.</p>
-                    <div class="button-grp"> 
-                        <button class="hero-btn"> Click Me </button>
-                        <button class="hero-btn"> Click Me </button>
-                    </div>
+        </div>
+        <div class="right-hero">
+            <!-- <div id="hero-img"></div> -->
+        </div>
+    </section>
+    <section class="data-wrap">
+        <p class="data-items">2,100+<br><span>Some data here</span></p>
+        <p class="data-items">50%<br><span>Some data here</span></p>
+        <p class="data-items">100<br><span>Some data here</span></p>
+    </section>
+    <section class="intro-wrap">
+        <div>
+            <h2>Take Control of Your Well Being</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                    soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                    voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                    soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                    voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, 
+                    soluta vero aperiam dicta eum sequi quasi, ex non doloribus, sunt labore
+                    voluptate voluptatem reiciendis? Neque sapiente aspernatur id veniam?</p>
+            </div>
+    </section>
+    <section class="provider-section">
+        <h2>Find the Perfect Provider</h2>
+        <div class="card">
+            <div></div>
+            <div></div>
+        </div>
+        <button id="provider-btn">Find a Provider</button>
+    </section>
+    <section class="resource-wrap">
+        <h2>Trusted Resources and Support</h2>
+        <p>Quality Care Starts Here. Find Trusted Health Resources that fits your needs</p>
+        <div class="resources">
+            <div class="resource-item">
+                <div class="resource-img"></div>
+                <button class="resource-btn">Read More</button>
+            </div>
+            <div class="resource-item">
+                <div class="resource-img"></div>
+                <button class="resource-btn">Read More</button>
+            </div>
+            <div class="resource-item">
+                <div class="resource-img"></div>
+                <button class="resource-btn">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="community-wrap">
+        <h2>Join Our Community</h2>
+        <p>Connect for Better Health: Join Our Community for Support, Resources, and Empowerment!</p>
+        <div class="form-wrap">
+            <form>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" class="input" required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname"class="input">
                 </div>
-            </div>
-            <div class="right-hero">
-                <div class="hero-img"></div>
-            </div>    
-        </section>
-        <section class="stats-section">
-            <p> Your voice should be heard!</p>
-            <p>Each year, 12 million adults in the U.S. are misdiagnosed. 
-                Women and racial and ethnic minorities are at the highest risk,
-                 about 20-30% more likely than white men to experience a misdiagnosis. </p>
-        </section>
-
-        <section class="card-section">
-            <h2>What would you like help with?</h2>
-            <div class="card-grp">
-                <div class="cards">Card 1</div>
-                <div class="cards">Card 2</div>
-                <div class="cards">Card 3</div>
-                <div class="cards">Card 4</div>
-            </div>
-        </section>
-
-        <footer>
-            <h1 id="logo"><a href="index.html">Yvette.</a></h1>
-            <p> Lorem ipsum dolor sit amet</p>
-            <div>2024 Makayla Wray All rights reserved</div>
-        </footer>
-    </main>
-    
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" class="input" required>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <h1 id="logo"><a href="index.html">Yvette.</a></h1>
+    <p> Lorem ipsum dolor sit amet</p>
+    <div>2024 Makayla Wray All rights reserved</div>
+  </footer>
 </body>
 </html>
