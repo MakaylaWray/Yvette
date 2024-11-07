@@ -4,8 +4,8 @@ body{
     margin-top: 0px;
     background-color: #FFFBEC;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
     height: 100%;
+    width: fit-content;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 0;
@@ -14,57 +14,28 @@ button:hover, li:hover{
     cursor: pointer;
 }
 
+header{
+    display: flex;
+    background-color: #0E2C25;
+}
+
 header a{
     margin-top: 10px;
-    padding-left: 87px;
     margin-bottom: 0px;
     font-family: "Playfair Display", sans-serif;
     font-style: italic;
     font-size: 48px;
     font-weight: 800;
     line-break: normal;
-    color: #20473D;
-    width: 173.666px;
+    color: #FFFBEC;
     height: 67px;
     text-decoration: none;
 }
-
-nav ul{
-    list-style: none;
+nav{
+    display:none;
 }
 
-.nav-items{
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /* flex-shrink: 0; */
-}
 
-#nav-btn{
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 10px;
-    border: 3px solid #FDB733;
-    background: #FDB733;
-    width: 238.161px;
-    height: 45px;
-    flex-shrink: 0;
-    margin-right: 31px;
-}
-
-#nav-btn:hover{
-    background-color: #a8867d;
-    border: 3px solid #a8867d;
-    color:white
-}
-
-main{
-    width: 100%;
-}
 /* hero section */
 
 .hero-wrap{
@@ -78,6 +49,8 @@ main{
     flex-direction: column;
     justify-content: center;
     padding-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 87px;
 }
 
 .left-hero h1{
@@ -87,7 +60,6 @@ main{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-left: 87px;
     margin-bottom: 10px;
 }
 
@@ -98,7 +70,6 @@ main{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-left: 100px;
     margin-bottom: 40px;
 }
 .right-hero{
@@ -121,7 +92,6 @@ main{
 }
 
 .btn-group button:first-child{
-    margin-left: 100px;
     border-radius: 18px;
     border: 3px solid #20473D;  
 }
@@ -133,20 +103,17 @@ main{
 }
 
 .btn-group button:nth-child(2){
-    margin-left: 15px;
     border: none;
 }
 
 #hero-img{
     height: 70%;
-    width: 90%;
+    width: 80%;
     margin-left: 50px;
     margin-top: 176px;
-    transform: rotate(0.256deg);
     border-radius: 15px 500px 500px 15px;
-    background: url(assets/hero-img-fotor.jpg) lightgray 50% / cover no-repeat;
+    background: url(assets/hero-img-fotor.jpg) lightgray center / cover no-repeat;
     box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-    /* flex-shrink: 0; */
 }
 
 /* Data Section */
@@ -227,6 +194,31 @@ main{
     line-height: normal;
 }
 
+.provider-section .card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 100%;
+}
+.provider-section div:first-child{
+    width: 80vw;
+    height: 30vh;
+    border-radius: 25px 25px 25px 25px;
+    background: url(assets/provider-img.jpg) lightgray center / cover no-repeat;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+    margin-left: 87px;
+}
+
+.provider-section .card div:nth-child(2){  
+    width: 80vw;
+    height: 25vh;
+    border-radius: 15px;
+    background: #FFFBEC;
+    margin-left: 87px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+    
+}
 #provider-btn{
     width: 264px;
     height: 58px;
@@ -400,7 +392,10 @@ footer{
 }
 
 
-@media (min-width: 900px) and (max-width: 1999px) {
+@media (min-width: 900px) {
+    nav{
+        display: flex;
+    }
 
     header{
         display: flex;
@@ -409,6 +404,36 @@ footer{
     }
     header a{
         color: #FFFBEC;
+        flex-grow: 1;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        align-items: center;
+
+    }
+    .nav-items{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: none;
+
+    }
+    
+    #nav-btn{
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 10px;
+        border: 3px solid #FDB733;
+        background: #FDB733;
+        width: 20vw;
+        height: 5vh;
     }
 
 
@@ -419,7 +444,6 @@ footer{
         background-color: transparent;
     }
     header a{
-        flex-grow: 1;
         margin-top: 10px;
         padding-left: 87px;
         margin-bottom: 0px;
@@ -451,6 +475,7 @@ footer{
         padding-left: 0;
         border-radius: 0px 0px 0px 30px;
         position: 0;
+        gap: none;
     }
     
     nav ul li a{
@@ -458,16 +483,12 @@ footer{
         padding-left: 0px;
     }
 
-    .provider-section .card{
-        display: flex;
-        margin-bottom: 50px;
-    }
     .provider-section div:first-child{  
-        z-index: 2;
-        width: 600px;
-        height: 600px;
+        z-index: 900;
+        width: 20%;
+        height: 60%;
         border-radius: 500px 500px 15px 15px;
-        background: url(assets/provider-img.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/provider-img.jpg) lightgray center / cover no-repeat;
         box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
         margin-left: 10%;
     }
@@ -484,5 +505,12 @@ footer{
         box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
         
     }
+    
+    #nav-btn:hover{
+        background-color: #a8867d;
+        border: 3px solid #a8867d;
+        color:white
+    }
+
 
 }
