@@ -62,8 +62,8 @@ main{
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
+
 }
 .left-hero{
     display: flex;
@@ -74,24 +74,19 @@ main{
 
 .left-hero h1{
     color: #0E2C25;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
     font-size: 15vw;
     font-weight: 700;
-    margin-top: 0;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 10px;
+    margin: 0 25px 10px 25px;
     height: fit-content;
 }
 
 .left-hero p {
     color: #0E2C25;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 6vw;
     font-weight: 700;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 40px;
+    margin: 40px 25px 40px 25px;
     height: fit-content;
 }
 .right-hero{
@@ -100,23 +95,19 @@ main{
 .btn-group{
     display: flex;
     gap: 2em;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 0 25px 0 25px;
     height: fit-content;
 }
 
 .btn-group button{
-    width: 40vw;
-    height:6vh;
-    font-family: Montserrat;
-    font-size: 5vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 18px;
-    border: 3px solid #20473D;  
-    background-color: #0E2C25;
     color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    width: 40vw;
+    height:  6vh;
+    border-radius: 18px;
+    background-color: #0E2C25;
 }
 
 /* #hero-img{
