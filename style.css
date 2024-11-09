@@ -85,7 +85,6 @@ main{
     color: #0E2C25;
     font-family: Montserrat, sans-serif;
     font-size: 6vw;
-    font-weight: 700;
     margin: 40px 25px 40px 25px;
     height: fit-content;
 }
@@ -95,7 +94,7 @@ main{
 .btn-group{
     display: flex;
     gap: 2em;
-    margin: 0 25px 0 25px;
+    margin: 25px 25px 0 25px;
     height: fit-content;
 }
 
@@ -125,33 +124,48 @@ main{
 .data-wrap{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #0E2C25;
     width: 100%;
+    padding: 60px 0 60px 0;
+    gap: 2rem;
 }
 
 .data-items{
-    color:#fff
+    color: #0E2C25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .data-items span{
-
+    font-size: 20vw;
+}
+.data-items p{
+    font-size: 8vw;
 }
 
 /* Introduction Section */
 
 .intro-wrap{
-
+    margin: 50px 0 50px 0;
 
 }
 .intro-wrap div {
-    width: 100%;
+    margin: 25px 25px 25px 25px;
 }
 .intro-wrap h2{
-
+    text-align: center;
+    font-size: 10vw;
 }
 
 .intro-wrap p{
-
+    font-size: 7vw;
+    text-align: center;
 }
 
 /* Provider Section */
