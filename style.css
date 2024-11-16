@@ -5,22 +5,21 @@ body{
     flex-direction: column;
     background-color: #FFFBEC;
     color: #0E2C25;
-    width: fit-content;
     margin: 0;
 }
 body h2{
     font-family: "Playfair Display", serif;
-    font-size: 10vw;
+    font-size: 24px;
     text-align: center;
 }
 body p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 7vw;
+    font-size: 18px;
     text-align: center;
 }
 body h1{
     font-family: "Playfair Display", serif;
-    font-size: 15vw;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -48,8 +47,7 @@ main{
     flex-direction: column;
 }
 #mobile-tophero{
-    height: 50vh;
-    width: auto;
+    height: 40vh;
     background: #0E2C25 url(/assets/hero-img-fotor.jpg) center/cover no-repeat;
 }
 /* hero section */
@@ -65,16 +63,14 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-
 .left-hero h1{
-    margin: 0 25px 10px 25px;
-    height: fit-content;
+    margin: 15px 25px 15px 25px;
 }
 
 .left-hero p {
-    margin: 40px 25px 40px 25px;
     text-align: left;
-    height: fit-content;
+    margin: 15px 25px 15px 25px;
+
 }
 .right-hero{
     display: none;
@@ -83,17 +79,17 @@ main{
 .btn-group{
     display: flex;
     gap: 2em;
-    margin: 25px 25px 0 25px;
-    height: fit-content;
+    margin: 15px 25px 15px 25px;
 }
 
 .btn-group button{
     color: #fff;
     font-family: Montserrat, sans-serif;
-    font-size: 5vw;
+    font-size: 18px;
     font-weight: 600;
-    width: 40vw;
-    height: 6vh;
+    width: 200px;
+    height: 60px;
+    border: solid;
     border-radius: 18px;
     background-color: #0E2C25;
 }
@@ -105,9 +101,8 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: #0E2C25;
-    width: 100%;
     padding: 60px 0 60px 0;
-    gap: 1.5px;
+    gap: 5px;
 }
 
 .data-items{
@@ -115,15 +110,19 @@ main{
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    width: 90%;
+    width: 70%;
     background-color: white;
     border-radius: 10px;
 }
 
 .data-items span{
-    font-size: 20vw;
+    font-size: 50px;
     font-family: ui-sans-serif, system-ui, sans-serif;
     font-weight: 800;
+    margin: 0;
+}
+.data-items p{
+    margin: 10px 0 10px 0;
 }
 
 /* Introduction Section */
@@ -302,21 +301,178 @@ form div input{
 
 footer{
     text-align: center;
-    height: 200px;
+    height: 100%;
     background-color: #0E2C25;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
 }
 footer #logo{
     margin-left: 0;
 }
 
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-@media (min-width: 950px) {
+.about-section h1{
+    text-align: center;
+}
+@media (min-width: 630px) {
+    header{
+        display: flex;
+        width: 100%;
+        background-color: #0E2C25;
+    }
+    #logo{
+        color: #FFFBEC;
+        flex-grow: 1;
+    }
+
+    nav ul{
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        list-style: none;
+        align-items: center;
+    }
+    .nav-items{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    li:first-child{
+        margin-left: 30px;
+    }
+
+    
+    #nav-btn{
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 10px;
+        border: 3px solid #FDB733;
+        background: #FDB733;
+        width: 100%;
+        height: 100%;
+    }
+
+    body h2{
+        font-size: 34px;
+    }   
+    body p {
+        font-size: 28px;
+    }
+    body h1{
+        font-size: 45px;
+    }
+
+    #mobile-tophero{
+        display: none;
+    }
+
+    .hero-wrap{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .left-hero, .right-hero{
+        width: 50%;
+        height: 100%;
+    }
+
+    .left-hero{
+        justify-content: center;
+        align-items: center;
+    }
+    .right-hero{
+        display: flex;
+        background-color: #FDB733;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero-img{
+        background: url(/assets/hero-img-fotor.jpg) lightgray 50% / cover no-repeat;
+        border-radius: 15px 500px 500px 15px; 
+        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
+        width: 230.962px;
+        height: 343.465px;
+    }
+
+    .btn-group button{
+        font-size: 22px;
+        width: 250px;
+        height: 60px;
+    }
+
+    .data-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .data-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 70%;
+        background-color: transparent;
+        color: #fff;
+    }
+    
+    .data-items span{
+        font-size: 50px;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-weight: 800;
+        margin: 0;
+    }
+    .data-items p{
+        margin: 10px 0 10px 0;
+    }
+    
+}
+
+@media (min-width: 830px){ 
+    #mobile-tophero{
+        display: none;
+    }
     nav{
         display: flex;
     }
+    .hero-wrap{
+        display: flex;
+    }
+    .right-hero{
+        display: flex;
+    }
+    #hero-img{
+        width: 40vw;
+        height: 50vh;
+    }
+}
 
+@media (min-width: 1030px){ 
+    .right-hero{
+        display: flex;
+    }
+
+    #hero-img{
+        width: 40vw;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1200px){ 
     header{
         display: flex;
         width: 100%;
@@ -336,7 +492,7 @@ footer #logo{
     .nav-items{
         color: #fff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 2.0vw;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -350,238 +506,16 @@ footer #logo{
 
     
     #nav-btn{
-        font-size: 2.0vw;
+        font-size: 20px;
         font-weight: 600;
         color: #fff;
         border-radius: 10px;
         border: 3px solid #FDB733;
         background: #FDB733;
-        width: 20vw;
-        height: 2vh;
+        width: 200px;
+        height: 55px;
     }
 
-    #mobile-tophero{
-        display: none;
-        height: 0;
-        width: 0;
-    }
-
-    .hero-wrap{
-        flex-direction: row;
-        height: 900px;
-        width: 100%;
-    }
-    .left-hero{
-        width: 50%;
-    }
-    .right-hero{
-        display: flex;
-        width: 50%;
-        height: 100%;
-        background-color: #FDB733;
-    }
-
-    .data-wrap{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #0E2C25;
-        width: 100%;
-    }
-    
-    .data-items{
-        color: #FFF;
-        font-family: "Playfair Display";
-        font-size: 96px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 70px;
-    }
-    
-    .data-items span{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-    }
-
-
-    .intro-wrap{
-        margin-top: 100px;
-        margin-bottom: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .intro-wrap div {
-        width: 100%;
-    }
-    .intro-wrap h2{
-        color: #0E2C25;
-        text-align: center;
-        font-family: "Playfair Display";
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .intro-wrap p{
-        color: #0E2C25;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 50px;
-        margin-top: 100px;
-    }
-
-    .provider-section{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 1024px;
-        background-color: #0E2C25;
-    }
-    
-    .provider-section h2{
-        padding-top: 100px;
-        color: #fff;
-        text-align: center;
-        font-family: "Playfair Display";
-        font-size: 4vh;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .provider-section .card{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        height: 100%;
-    }
-    .provider-section div:first-child{
-        width: 80vw;
-        height: 30vh;
-        border-radius: 25px 25px 25px 25px;
-        background: url(assets/provider-img.jpg) lightgray center / cover no-repeat;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-        margin-left: 87px;
-    }
-    
-    .provider-section .card div:nth-child(2){  
-        width: 80vw;
-        height: 25vh;
-        border-radius: 15px;
-        background: #FFFBEC;
-        margin-left: 87px;
-        margin-top: 10px;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-        
-    }
-    #provider-btn{
-        width: 264px;
-        height: 58px;
-        flex-shrink: 0;
-        color: #fff;
-        border-radius: 18px;
-        border: 3px solid #fff; 
-        background-color: transparent;
-        font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        align-self: center;
-    }
-    
-    #provider-btn:hover{
-        background-color: #a8867d;
-        border: 3px solid #a8867d;  
-        color:white
-    }
-    
-    .resource-wrap h2{
-        padding-top: 100px;
-        color: #0E2C25;
-        text-align: center;
-        font-family: "Playfair Display";
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    
-    .resource-wrap p {
-        color: #0E2C25;
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    
-    }
-    
-    .resource-wrap .resources{
-        display: flex;
-        justify-content: center;
-        gap: 3em;
-        margin-top: 70px;
-    }
-    
-    .resource-item{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    .resource-img{
-        /* width: 450px; */
-        height: 500px;
-        /* flex-shrink: 0; */
-        background-color: #0E2C25;
-    }
-    
-    .resource-item:first-child .resource-img{
-        border-radius: 150px 15px 15px 15px;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-    }
-    .resource-item:nth-child(2) .resource-img{
-        border-radius: 15px 15px 15px 15px;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-    }
-    .resource-item:nth-child(3) .resource-img{
-        border-radius: 15px 150px 15px 15px;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-    }
-    
-    .resource-btn{
-        width: 264px;
-        height: 58px;
-        margin-top: 40px;
-        font-size: 24px;
-        font-family: 'Montserrat', sans-serif;
-        color: #0E2C25;
-        background-color: transparent;
-        border-radius: 18px;
-        border: 3px solid #0E2C25;
-        flex-shrink: 0;
-        align-self: center;
-    }
-    
-    .resource-btn:hover{
-        background-color: #a8867d;
-        border: 3px solid #a8867d;  
-        color:white;
-    }
-
-
-}
-
-@media (min-width: 1200px){ 
     header{
         background-color: transparent;
     }
@@ -624,44 +558,14 @@ footer #logo{
         padding-left: 0px;
     }
 
-    /* #hero-img{
-    height: 70%;
-    width: 80%;
-    margin-left: 50px;
-    margin-top: 176px;
-    border-radius: 15px 500px 500px 15px;
-    background: url(assets/hero-img-fotor.jpg) lightgray center / cover no-repeat;
-    box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-} */
-
-    .provider-section div:first-child{  
-        z-index: 900;
-        width: 20%;
-        height: 60%;
-        border-radius: 500px 500px 15px 15px;
-        background: url(assets/provider-img.jpg) lightgray center / cover no-repeat;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-        margin-left: 10%;
+    #mobile-tophero{
+        display: none;
+        height: 0;
+        width: 0;
     }
 
-    .provider-section .card div:nth-child(2){  
-        position: absolute;
-        z-index: 1;
-        width: 984px;
-        height: 566px;
-        border-radius: 15px;
-        background: #FFFBEC;
-        margin-left: 30%;
-        margin-top: 50px;
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-        
+    #hero-img{
+        height: 80vh;
     }
-    
-    #nav-btn:hover{
-        background-color: #a8867d;
-        border: 3px solid #a8867d;
-        color:white
-    }
-
 
 }
