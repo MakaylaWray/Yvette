@@ -3,7 +3,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #FFFBEC;
+    background-color: #FFF;
     color: #0E2C25;
     margin: 0;
 }
@@ -14,6 +14,8 @@ h2{
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
 }
 h1{
     font-family: "Playfair Display", serif;
@@ -46,7 +48,7 @@ main{
 }
 #mobile-tophero{
     height: 40vh;
-    background: #0E2C25 url(/assets/hero-img-fotor.jpg) center/cover no-repeat;
+    background: #0E2C25 url(/assets/hero-img.jpg) center/cover no-repeat;
 }
 /* hero section */
 
@@ -133,53 +135,33 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2em;
     margin: 25px 25px 25px 25px;
 }
-.intro-images{
-    position: relative;
-    top: 100px;
-    left: 15px;
-}
+
 .intro-img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-}
-.introtop-img{
-    background-image: url(assets/patient-smile.webp);
+    background-image: url(assets/patient_smiling.png);
     width: 150px;
     height: 150px;
-    position: relative;
-    left: 30px;
-    bottom: 50px;
-    z-index: 100;
 }
 
-.introbtm-img{
-    background-image: url(assets/hospitalbg.jpg);
-    width: 170px;
-    height: 170px;
-    position: relative;
-    bottom: 250px;
-    right: 40px;
-
-}
-.intro-wrap h2{
-    position: relative;
-    bottom: 60px;
+.intro-words h2{
     width: 250px;
 }
 .intro-p{
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: 2em;
-    bottom: 30px;
 }
-.intro-wrap p{
+.intro-words{
     width: 270px;
-    line-height: 25px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 /* Provider Section */
 
@@ -410,34 +392,11 @@ button:hover, #nav-btn:hover{
         margin: 10px 0 10px 0;
         width: 150px;
     }
-
-    .intro-images{
-        top: 100px;
-        left: 15px;
-    }
-    .introtop-img{
-        width: 150px;
-        height: 150px;
-        left: 30px;
-        bottom: 50px;
-    }
-    
-    .introbtm-img{
-        width: 170px;
-        height: 170px;
-        bottom: 250px;
-        right: 40px;
-    
-    }
     .intro-wrap h2{
-        bottom: 60px;
         width: 250px;
     }
     .intro-p{
-        bottom: 30px;
-    }
-    .intro-wrap p{
-        width: 270px;
+        width: 100%;
     }
     
 }
@@ -490,9 +449,7 @@ button:hover, #nav-btn:hover{
     h2{
         font-size: 34px;
     }   
-    p {
-        font-size: 18px;
-    }
+
     body h1{
         font-size: 45px;
     }
@@ -518,7 +475,7 @@ button:hover, #nav-btn:hover{
         justify-content: center;
     }
     #hero-img{
-        background: url(/assets/hero-img-fotor.jpg) lightgray 50% / cover no-repeat;
+        background: url(/assets/hero-img.jpg) lightgray 50% / cover no-repeat;
         border-radius: 15px 500px 500px 15px; 
         box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
         width: 45vw;
@@ -548,10 +505,6 @@ button:hover, #nav-btn:hover{
 }
 
 @media (min-width: 830px){ 
-    #mobile-tophero{
-        display: none;
-    }
-
     #nav-btn{
         height: 40px;
 
@@ -574,9 +527,6 @@ button:hover, #nav-btn:hover{
     h2{
         font-size: 36px;
     }   
-    p {
-        font-size: 20px;
-    }
     body h1{
         font-size: 40px;
     }
@@ -595,10 +545,29 @@ button:hover, #nav-btn:hover{
     .data-items p{
         width: 250px;
     }
-
+    .intro-img{
+        width: 500px;
+        height: 450px;
+    }
     .intro-contents{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-words{
+        width: 500px;
+        margin-left: 20px;
+    }
+    .intro-wrap h2{
+        width: 100%;
+    }
+    
+    .intro-p{
+        display: flex;
+    }
+    .intro-images{
+        margin-left: 20px;
     }
 
     .provider-img{
@@ -617,6 +586,7 @@ button:hover, #nav-btn:hover{
         z-index: 100;
         left: 50px;
     }
+    
     .provider-p{
         position: relative;
         right: 50px;
@@ -638,15 +608,13 @@ button:hover, #nav-btn:hover{
     }
 
     #hero-img{
-        width: 40vw;
+        width: 36vw;
         height: 50vh;
     }
     h2{
         font-size: 40px;
     }   
-    p {
-        font-size: 20px;
-    }
+
     body h1{
         font-size: 50px;
     }
@@ -764,20 +732,14 @@ button:hover, #nav-btn:hover{
         padding-left: 0px;
     }
 
-    #mobile-tophero{
-        display: none;
-    }
-
     #hero-img{
-        height: 80vh;
+        width: 40vw;
+        height: 70vh;
         margin: 100px 50px 50px 50px;
     }
     h2{
         font-size: 48px;
     }   
-    p {
-        font-size: 22px;
-    }
     body h1{
         font-size: 75px;
     }
@@ -794,6 +756,5 @@ button:hover, #nav-btn:hover{
         height: 70px;
         
     }
-
 
 }
