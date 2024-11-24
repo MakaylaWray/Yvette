@@ -31,7 +31,7 @@ header{
     background-color: #0E2C25;
 }
 
-#logo{
+#logo, #footer-logo{ 
     margin: 10px 0 0 25px;
     font-family: "Playfair Display", sans-serif;
     font-style: italic;
@@ -286,83 +286,86 @@ main{
 
 /* Community Section */
 
-.community-wrap{
+
+.community-wrap {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
-.community-wrap h2{
-    padding-top: 100px;
-}
-
-.form-wrap{
-    align-self: center;
-    margin-top: 70px;
-    margin-bottom: 200px;
-    height: 100%;
-    width: 100%;
-    background-color: #FFF;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 4px 40px 4px rgba(0, 0, 0, 0.25);
-}
-
-form{
-    width: 100%;
-    margin-top: 50px;
-    font-size: 24px;
-}
-
-form div{
+.community-contents{
     display: flex;
+    width: 400px;
     flex-direction: column;
-    align-items: center;
-    margin: 25px;
-    gap: 2rem;
-}
-
-form div label{
-    font-size: 6vw;
-    font-family: 'Poppins', sans-serif;
-}
-
-form div input{
-    width: 90%;
-    height: 4vh;
+    align-items:center;
+    gap: 3em;
     border-radius: 10px;
-    border-color: rgb(146, 146, 146);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.community-contents h2{
+    margin-top: 50px;
+}
+.community-contents p{
+    width: 70%;
+    text-align: center;
+}
+
+.form-wrap form{
+    width: 100%;
+}
+form{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+label, input {
+    width: 300px;
+}
+input{
+    height:40px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: none;
+}
+
+input::placeholder{
+    color: #0E2C25;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #form-submit{
     font-family: 'Poppins', sans-serif;
     background-color: #0E2C25;
     color: #fff;
-    font-size: 6vw;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+
+}
+#form-submit:hover{
+    cursor: pointer;
+    background-color: #522f18;
 }
 
 /* Footer */
 
 footer{
     text-align: center;
-    height: 100%;
+    height: 200px;
     background-color: #0E2C25;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 15px;
 }
-footer #logo{
+
+#footer-logo{
     margin-left: 0;
 }
 
-.about-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-section h1{
-    text-align: center;
-}
 
 button:hover, #nav-btn:hover{
     background-color: #522f18;
@@ -416,9 +419,6 @@ button:hover, #nav-btn:hover{
 }
 
 @media (min-width: 630px) {
-    .hero-wrap, .intro-wrap, .resource-wrap, .provider section, .community-wrap{
-        height: 90vh;
-    }
     header{
         display: flex;
         width: 100%;
@@ -454,10 +454,10 @@ button:hover, #nav-btn:hover{
     
     #nav-btn{
         font-size: 16px;
-        font-weight: 400;
         color: #fff;
+        font-weight: 600;
         border-radius: 10px;
-        border: 3px solid #FDB733;
+        border: transparent;
         background: #FDB733;
         width: 100%;
         height: 100%;
@@ -524,12 +524,14 @@ button:hover, #nav-btn:hover{
         width: 300px;
         height: 50px;
         font-size: 16px;
-    }
-    
+    }    
     
 }
 
 @media (min-width: 830px){ 
+    .hero-wrap, .intro-wrap, .resource-wrap, .provider section, .community-wrap{
+        height: 90vh;
+    }
     #nav-btn{
         height: 40px;
 
@@ -558,12 +560,9 @@ button:hover, #nav-btn:hover{
     .left-hero h1 , .left-hero p{
         width: 400px;
     }
-    .btn-group{
-        width: 400px;
-    }
+
     .btn-group button{
-        font-size: 16px;
-        width: 150px;
+        width: 300px;
         height: 60px;
     }
     
@@ -571,9 +570,6 @@ button:hover, #nav-btn:hover{
         width: 250px;
     }
 
-    /* .intro-wrap{
-        height: 700px;
-    } */
     .intro-img{
         width: 500px;
         height: 450px;
@@ -646,10 +642,13 @@ button:hover, #nav-btn:hover{
         height: 450px;
     }
 
-
-
+    .community-contents{
+        width: 600px;
+        height: 600px;
+    }
 
 }
+
 
 @media (min-width: 1030px){ 
     .hero-wrap{
@@ -676,12 +675,6 @@ button:hover, #nav-btn:hover{
     .btn-group{
         width: 400px;
     }
-    .btn-group button{
-        font-size: 20px;
-        width: 150px;
-        height: 80px;
-    }
-
     .data-items p{
         width: 350px;
     }
@@ -707,6 +700,11 @@ button:hover, #nav-btn:hover{
         height: 500px;
     }
 
+    .community-contents{
+        width: 700px;
+        height: 600px;
+    }
+
 }
 
 @media (min-width: 1200px){ 
@@ -715,11 +713,6 @@ button:hover, #nav-btn:hover{
         width: 100%;
         background-color: #0E2C25;
     }
-    #logo{
-        color: #FFF;
-        flex-grow: 1;
-    }
-
     nav ul{
         display: flex;
         gap: 2rem;
@@ -730,9 +723,7 @@ button:hover, #nav-btn:hover{
         color: #fff;
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         text-align: center;
         text-decoration: none;
     }
@@ -741,14 +732,8 @@ button:hover, #nav-btn:hover{
         margin-left: 30px;
     }
 
-    
     #nav-btn{
         font-size: 20px;
-        font-weight: 600;
-        color: #fff;
-        border-radius: 10px;
-        border: 3px solid #FDB733;
-        background: #FDB733;
         width: 200px;
         height: 55px;
     }
@@ -763,7 +748,6 @@ button:hover, #nav-btn:hover{
         font-style: italic;
         font-size: 48px;
         font-weight: 800;
-        line-break: normal;
         color: #20473D;
         width: 173.666px;
         height: 67px;
@@ -806,21 +790,42 @@ button:hover, #nav-btn:hover{
     body h1{
         font-size: 75px;
     }
-
+    .left-hero{
+        gap: 2em;
+    }
     .left-hero h1 , .left-hero p{
         width: 500px;
+    }
+
+    .left-hero p{
+        font-size: 24px;
     }
     .btn-group{
         width: 500px;
     }
     .btn-group button{
-        font-size: 22px;
-        width: 200px;
-        height: 70px;
-        
+        font-size: 20px;
     }
+
     .resource-item{
         width: 300px;
     }
 
+    .community-contents{
+        height: 600px;
+        width: 800px;
+    }
+
+}
+
+
+/********************************* ABOUT PAGE ********************************************/
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section h1{
+    text-align: center;
 }
