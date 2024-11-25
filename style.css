@@ -440,6 +440,9 @@ footer{
     margin-bottom: 10px;
 }
 
+/********************************* FIND SUPPORT PAGE ********************************************/
+
+
 @media (min-width: 430px){
     #mobile-tophero{
         height: 60vh;
@@ -897,6 +900,53 @@ footer{
     .community-contents{
         height: 600px;
         width: 800px;
+    }
+
+
+    .support-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    table{
+        font-family: Calibri, sans-serif;
+        height: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+
+    .table-header{
+        background-color: #0E2C25;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    th{
+        width: 200px;
+    }
+    th:first-child{
+        border-top-left-radius: 10px;
+    }
+    th:last-child{
+        border-top-right-radius: 10px;
+    }
+    td, tr, .table-header{
+        height: 45px;
+    }
+    
+    th, td{
+        vertical-align: middle;
+        text-align: center;
+    }
+    td{
+        color: #808080;
+    }
+
+    tr:nth-child(even){
+        background-color: #F5F5F5;
     }
 
 }
