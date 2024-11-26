@@ -902,7 +902,6 @@ footer{
         width: 800px;
     }
 
-
     .support-wrap{
         display: flex;
         flex-direction: column;
@@ -910,15 +909,40 @@ footer{
         align-items: center;
 
     }
+    .support-banner{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+        height: 350px;
+        background-color: #0E2C25;
+        color: #fff;
+    }
+    .banner-contents{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .banner-contents p{
+        width: 600px;
+    }
 
     table{
         font-family: Calibri, sans-serif;
         height: 100%;
+        margin-bottom: 100px;
         border-collapse: collapse;
         border-radius: 10px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     }
 
+    caption{
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
     .table-header{
         background-color: #0E2C25;
         color: #fff;
@@ -975,5 +999,75 @@ footer{
     .column-7{
         width: 150px;
     }
+    .feature-banner{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+        gap: 2em;
+    }
+    .feature-banner h2, .feature-banner p{
+        margin-left: 100px;
+        width: 600px;
+    }
 
+    .topfeature-resource{
+        display: flex;
+    }
+    .topfeature-vid{
+        margin-left: 100px;
+        width: 60%;
+    }
+    .topfeature-contents{
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        width: 40%;
+    }
+    .feature-container{
+        width:500px;
+    }
+    .feature-img{
+        width: 450px;
+        height: 300px;
+        background-color: #0E2C25;
+    }
+    .feature-type{
+        font-family: sans-serif;
+        font-size: 15px;
+        padding-left: 30px;
+        color: #4b4b4b;
+        background-color: #f3f4f5;
+        width: 100px;
+        height: 30px;
+        border-radius: 25px;
+    }
+
+    .feature-title{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .topfeature-contents button{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 16px;
+        color:#20473D;
+        background-color: transparent;
+        text-align: left;
+        border: none;
+        width: 120px;
+        height: 50px;
+    }
+
+    .feature-row{
+        display: flex;
+        justify-content: center;
+    }
 }
