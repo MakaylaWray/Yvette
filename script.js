@@ -5,3 +5,7 @@ function redirectToProvider(){
 function redirectToResources(){
     window.location.href = "resources.html";
 }
+
+function redirectToAbout(){
+    window.location.href = "about.html";
+}

@@ -8,19 +8,26 @@ body{
     margin: 0;
 }
 h2{
-    font-family: "Playfair Display", serif;
-    font-size: 30px;
+    font: normal 600 30px "Nunito Sans", sans-serif;
 }
 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 400;
+    font: normal 600 25px "Nunito Sans", sans-serif;
+    line-height: normal;
 }
 h1{
     font-family: "Playfair Display", serif;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 700;
+}
+
+button{
+    font: normal 600 22px "Nunito Sans", sans-serif;
+    background-color: #FDB733;
+    color: #fff;
+    border: solid;
+    border-radius: 30px;
+    width: 230px;
+    height: 50px;
 }
 
 header{
@@ -70,20 +77,18 @@ button:hover, #nav-btn:hover{
     background-color: #522f18;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-#mobile-tophero{
-    height: 40vh;
-    background: #0E2C25 url(/assets/hero-img-fotor.jpg) center/cover no-repeat;
+.mobile-herobg{
+    height: 713px;
+    background: url(/assets/mobile-herobg.svg) bottom/cover no-repeat;
+    flex-shrink: 0;
+
 }
 /* hero section */
 
 .hero-wrap{
     display: flex;
     flex-direction: column;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
 
 }
 .highlight{
@@ -93,36 +98,27 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .left-hero h1{
+    width: 400px;
+    height: auto;
     margin: 15px 25px 15px 25px;
+    text-align:center;
+    line-height: normal;
+    font: normal 700 40px "Noto Serif", sans-serif;
 }
 
 .left-hero p {
-    text-align: left;
+    width: 400px;
+    height: auto;
     margin: 15px 25px 15px 25px;
-
+    text-align: center;
+    line-height: normal;
+    font: normal 600 24px "Nunito Sans", sans-serif;
 }
 .right-hero{
     display: none;
-}
-
-.btn-group{
-    display: flex;
-    gap: 2em;
-    margin: 15px 25px 15px 25px;
-}
-
-.btn-group button{
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    width: 200px;
-    height: 60px;
-    border: solid;
-    border-radius: 10px;
-    background-color: #0E2C25;
 }
 
 /* Data Section */
@@ -130,10 +126,12 @@ main{
 .data-wrap{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: #0E2C25;
+    height: 1000px;
+    background: #0E2C25 url("assets/pattern-bg.svg") left/cover no-repeat;
     padding: 20px 0 20px 0;
-    gap: 5px;
+    gap: 2em;
 }
 
 .data-items{
@@ -141,19 +139,16 @@ main{
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    width: 95%;
-    height:140px;
-    background-color: #fff;
-    border-radius: 10px;
+    color: #fff;
 }
 
 .data-items span{
-    font-size: 18px;
-    font-family: ui-sans-serif, system-ui, sans-serif;
-    font-weight: 800;
-    margin: 0;
+    font: normal 800 64px "Nunito Sans", sans-serif;
 }
 .data-items p{
+    color: #fff;
+    width: 277px;
+    text-align: center;
     margin: 10px 0 10px 0;
 }
 
@@ -164,41 +159,27 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 550px;
-    margin: 50px 0 50px 0;
-}
-.intro-contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 2em;
-    margin: 25px 25px 25px 25px;
+    margin: 50px 0 50px 0;
 }
 
 .intro-img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    background-image: url(assets/intro-img.png);
-    width: 150px;
-    height: 150px;
+    background: transparent url("assets/intro-img.svg") left/cover no-repeat;
+    width: 435px;
+    height: 263px;
+}
+.intro-h2{
+    text-align: center;
 }
 
-.intro-words h2{
-    width: 250px;
-}
 .intro-p{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+    width: 350px;
+    text-align: center;
 }
-.intro-words{
-    width: 270px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
+
 /* Provider Section */
 
 .provider-section{
@@ -487,53 +468,6 @@ footer{
 }
 
 
-@media (min-width: 430px){
-    #mobile-tophero{
-        height: 60vh;
-    }
-
-    .left-hero{
-        justify-content: center;
-        align-items: center;
-    }
-    .left-hero h1, .left-hero p, .btn-group{
-        width: 400px;
-    }
-    .data-wrap{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    
-    .data-items{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        width: 70%;
-        background-color: transparent;
-        color: #fff;
-    }
-    
-    .data-items span{
-        font-size: 50px;
-        font-family: ui-sans-serif, system-ui, sans-serif;
-        font-weight: 800;
-        margin: 0;
-    }
-    .data-items p{
-        margin: 10px 0 10px 0;
-        width: 150px;
-    }
-    .intro-wrap h2{
-        width: 250px;
-    }
-    .intro-p{
-        width: 100%;
-    }
-    
-}
-
 @media (min-width: 630px) {
     header{
         display: flex;
@@ -587,7 +521,7 @@ footer{
         font-size: 45px;
     }
 
-    #mobile-tophero{
+    .mobile-herobg{
         display: none;
     }
 
@@ -603,16 +537,12 @@ footer{
     }
     .right-hero{
         display: flex;
-        background-color: #FDB733;
+        background-image: url(/assets/hero-bg.svg);
+        background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
-    }
-    #hero-img{
-        background: url(/assets/hero-img-fotor.jpg) lightgray 50% / cover no-repeat;
-        border-radius: 15px 500px 500px 15px; 
-        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.25);
-        width: 45vw;
-        height: 40vh;
+        background-size: cover;
+        background-position: bottom;
     }
     
     .btn-group button{
@@ -925,15 +855,19 @@ footer{
         width: 500px;
     }
 
+    .right-hero{
+        height: 100%;
+    }
+    .hero-wrap{
+        height: 95vh;
+    }
+
     .left-hero p{
         position:relative;
         bottom: 30px;
         font-size: 24px;
     }
-    .btn-group{
-        width: 500px;
-    }
-    .btn-group button{
+    button{
         font-size: 20px;
     }
 
