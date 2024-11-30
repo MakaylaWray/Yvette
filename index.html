@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0E2C25" />
+    <meta name="theme-color" content="#0E2C25" />  <!--TODO: Change theme color while scrolling-->
     <meta name="description=" content="Yvette is your trusted companion, dedicated to empowering women of color to take charge of their healthcare journeys. Women of color face many frustrating challenges, but healthcare should not be one of them." >
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    </style>    
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -17,7 +17,9 @@
 </head>
 <body id="landing-page">
   <header>
-    <a href="index.html" id="logo">Yvette.</a>
+    <div class="logo-img">logo</div>
+    <a href="index.html" id="logo">Yvette</a> <!-- Desigined with Canva-->
+    </nav>
     <nav>
         <ul>
             <li><a href="index.html" class="nav-items">Home</a></li>
@@ -31,7 +33,6 @@
         </ul>
     </nav>
   </header>
-  <main>
     <section class="hero-wrap">
         <div class="left-hero">
             <h1>You Deserve To Be Heard</h1>
@@ -42,8 +43,8 @@
         <div class="right-hero"></div>
     </section>
     <section class="data-wrap">
-        <div class="data-items"><span>1 in 5</span><p>Black women say they have been treated unfairly by a health care provider because of their race</p></div> <!-- https://www.kff.org/racial-equity-and-health-policy/issue-brief/five-facts-about-black-womens-experiences-in-health-care/-->
-        <div class="data-items"><span>15%</span><p>Women of color average are uninsured more than double the rate for white individuals </p></div> <!-- https://www.kff.org/health-policy-101-the-uninsured-population-and-health-coverage/-->
+        <div class="data-items"><span>1 in 5</span><p>Black women say they have been treated unfairly by a health care provider because of their race</p></div>
+        <div class="data-items"><span>15%</span><p>Women of color average are uninsured more than double the rate for white individuals </p></div>
         <div class="data-items"><span>16%</span><p>American Indian/Alaska Native women have higher rates of health conditions compared to white women</p></div>
     </section>
     <section class="intro-wrap">
@@ -53,41 +54,36 @@
             Women of color face many frustrating challenges, but healthcare should not be one of them. 
         </p>
         <button onclick="redirectToAbout()">Read More</button>
+        <div class="swirl-img"></div>
+        <div class="hands-img"></div>
     </section>
     <section class="resource-wrap">
-        <div class="main-container">
-            <div class="left-container">
-                <div class="header"><h2>Trusted Resources and Support</h2></div>
-                <div class="resources"> 
-                    <div class="resources-left">
-                        <div class="resource-item">
-                            <div class="resource-title"><p>Network of Providers</p></div>
-                            <div class="resource-words"><p>We are committed to provide a list of healthcare providers that cater 
-                            to women of color with attention to cultural awareness and equal treatment
-                            on patients well being.</p></div>
-                        </div>
-                        <div class="resource-item">
-                            <div class="resource-title"><p>Advice and Guidance</p></div>
-                            <div class="resource-words"><p>Explore advice and support for looking after your well being to prevent
-                                health problems down the line.</p></div>
-                        </div>
-                    </div>
-                    <div class="resources-right">
-                        <div class="resource-item">
-                            <div class="resource-title"><p>Knowledge is Power</p></div>
-                            <div class="resource-words"><p>Discover ways to advocate for yourself and grasp terminology 
-                                while staying informed about your patient rights.</p></div>
-                        </div>
-                        <div class="resource-item">
-                            <div class="resource-title"><p>Affordable Quality Care</p></div>
-                            <div class="resource-words"><p>Find services that can assist with handling the legal and financial 
-                                aspect of your healthcare needs </p></div>
-                        </div>
-                     </div>
-                </div>
+        <h2>Trusted Resources and Support</h2>
+        <div class="resources"> 
+            <div class="resource-item">
+                <div><h3 class="resource-title">Network of Providers</h3></div>
+                <div><p class="resource-p">We are committed to provide a list of healthcare providers that cater 
+                to women of color with attention to cultural awareness and equal treatment
+                on patients well being.</p></div>
+                <button>Find a Provider</button>
             </div>
-            <div class="right-container">
-                <div class="resource-img"></div>
+            <div class="resource-item">
+                <div><h3 class="resource-title">Advice and Guidance</h3></div>
+                <div><p class="resource-p">Explore advice and support for looking after your well being to prevent
+                    health problems down the line.</p></div>
+                    <button>Read More</button>
+            </div>
+            <div class="resource-item">
+                <div><h3 class="resource-title">Knowledge is Power</h3></div>
+                <div><p class="resource-p">Discover ways to advocate for yourself and grasp terminology 
+                    while staying informed about your patient rights.</p></div>
+                    <button>Browse Articles</button>
+            </div>
+            <div class="resource-item">
+                <div><h3 class="resource-title">Affordable Quality Care</h3></div>
+                <div><p class="resource-p">Find services that can assist with handling the legal and financial 
+                    aspect of your healthcare needs </p></div>
+                    <button>Explore More</button>
             </div>
         </div>
     </section>
@@ -102,7 +98,7 @@
         </div>
         <button id="provider-btn" onclick="redirectToProvider()">Find a Provider</button>
     </section>
-    <!-- <section class="community-wrap">
+    <section class="community-wrap">
         <div class="community-contents">
             <h2>Join Our Community</h2>
             <p>Connect for Better Health: Join Our Community for Support, Resources, and Empowerment!</p>
@@ -115,8 +111,7 @@
                 </form>
             </div>
         </div>
-    </section> -->
-  </main>
+    </section>
   <footer>
     <h1><a href="index.html" id="footer-logo">Yvette.</a></h1>
     <div>2024 Makayla Wray All rights reserved</div>
