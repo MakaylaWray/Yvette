@@ -710,6 +710,58 @@ footer{
     #about-page .left-hero p{
         width: 500px;
     }
+
+    .support-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 250px;
+        margin-bottom: 150px;
+
+    }
+
+    .support-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100vw;
+        background-color: #0E2C25;
+    }
+    .support-banner h2, .support-banner p{
+        color: #fff;
+    }
+
+    table{
+        font: normal 300 18px "Noto Sans", sans-serif;
+        color: rgb(74, 74, 74);
+        background-color: #fff;
+        width: 90vw;
+        border-radius: 25px;
+    }
+
+    .column-1, .column-2, .column-7{
+        width: 100px;
+    }
+    .column-3, .column-4,.column-5, .column-6{
+        width: 80px;
+    }
+    tr{
+        height: 40px;
+    }
+
+    tr:nth-child(even){
+        background-color: #f8fafa;
+    }
+
+    td{
+        text-align: center;
+    }
+    caption{
+        margin: 20px 0 20px 0;
+    }
     
 }
 
