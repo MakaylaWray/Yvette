@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -16,8 +16,9 @@
     <title>Welcome to Yvette!</title>
 </head>
 <body id="landing-page">
-  <header>
-    <!-- <div class="logo-img">logo</div> -->
+    <div class="banner"></div>
+    <header>
+    <div class="logo-img"></div>
     <a href="index.html" id="logo">Yvette</a> 
     <div class="ham-menu">
         <span></span>
@@ -62,24 +63,19 @@
     </section>
     <section class="intro-wrap">
         <div class="intro-img"></div>
-        <h2 class="intro-h2">Take Control of Your Well Being</h2>
-        <p class="intro-p">Yvette is your trusted companion, dedicated to empowering women of color to take charge of their healthcare journeys. 
-            Women of color face many frustrating challenges, but healthcare should not be one of them. 
-        </p>
-        <button onclick="redirectToAbout()">Read More</button>
-        <div class="swirl-img"></div>
-        <div class="hands-img"></div>
+        <div>
+            <h2 class="intro-h2">Take Control of Your Well Being</h2>
+            <p class="intro-p">Yvette is your trusted companion, dedicated to empowering women of color to take charge of their healthcare journeys. 
+                Women of color face many frustrating challenges, but healthcare should not be one of them. 
+                
+            </p>
+            <button onclick="redirectToAbout()">Read More</button>
+            <div class="hands-img"></div>
+        </div>
     </section>
     <section class="resource-wrap">
         <h2>Trusted Resources and Support</h2>
         <div class="resources"> 
-            <div class="resource-item">
-                <div><h3 class="resource-title">Network of Providers</h3></div>
-                <div><p class="resource-p">We are committed to provide a list of healthcare providers that cater 
-                to women of color with attention to cultural awareness and equal treatment
-                on patients well being.</p></div>
-                <button>Find a Provider</button>
-            </div>
             <div class="resource-item">
                 <div><h3 class="resource-title">Advice and Guidance</h3></div>
                 <div><p class="resource-p">Explore advice and support for looking after your well being to prevent
@@ -107,9 +103,9 @@
             <div class="provider-p">
                 <p>Browse our network of trusted providers ready to truly listen 
                 and deliver the care you deserve.</p>
+                <button class="provider-btn" onclick="redirectToProvider()">Find a Provider</button>
             </div>
         </div>
-        <button id="provider-btn" onclick="redirectToProvider()">Find a Provider</button>
     </section>
     <section class="community-wrap">
         <div class="community-contents">
@@ -126,7 +122,7 @@
         </div>
     </section>
   <footer>
-    <h1><a href="index.html" id="footer-logo">Yvette.</a></h1>
+    <a href="index.html" id="footer-logo">Yvette.</a>
     <div>2024 Makayla Wray All rights reserved</div>
   </footer>
   <script src="script.js"></script>
