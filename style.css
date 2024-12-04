@@ -1,14 +1,14 @@
 /* Header CSS  */
 
 body{
-    background-color: #faeef6;
+    background-color: #f9f7eb;
     color: #0E2C25;
     margin: 0;
     width: 100vw;
     height: 100vh;
 }
 .banner{
-    background-color: #0E2C25;;
+    background-color: #63776d;
     width: 100vw;
     height: 6vh;
     position:fixed;
@@ -20,7 +20,7 @@ h2{
     width: 75vw;
     height: auto;
     text-align: center;
-    color: #29180c;
+    color: #0E2C25;
 }
 p {
     font: normal 400 20px "Noto Sans", sans-serif;
@@ -28,7 +28,7 @@ p {
     width: 75vw;
     height: auto;
     text-align: justify;
-    color: #29180c;
+    color: #0E2C25;
 }
 h1{
     font: normal 500 40px "Noto Serif", serif;
@@ -36,7 +36,7 @@ h1{
     height: auto;
     line-height: normal;
     text-align: center;
-    color: #29180c;
+    color: #0E2C25;
 }
 h3{
     font: normal 500 30px "Noto Serif", serif;
@@ -47,7 +47,7 @@ h3{
     color: #29180c;
 }
 button{
-    font: normal 600 20px "Noto Sans", sans-serif;
+    font: normal 400 20px "Noto Sans", sans-serif;
     background-color:#FDB733;
     color: #fff;
     border: #FDB733 solid;
@@ -68,17 +68,21 @@ header{
     z-index: 500;
 
 }
-.logo-img{
-    background: url(assets/yvette-logo-white.png) center/cover no-repeat;
-    width: 15vw;
-    height: 6vh;
-    margin-left: 20px;
-}
-#logo{
+
+.logo-wrap{
     display: flex;
     align-items: center;
+    width: 50%;
+    height: 10vh;
+
 }
-#logo, #footer-logo{ 
+.logo-img{
+    background: url(assets/yvette-logo.png) center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#footer-logo{ 
     margin: 0 0 0 25px;
     font: normal 600 34px "Noto Serif", sans-serif;
     color: #FFF;
@@ -166,14 +170,15 @@ nav{
 .left-hero{
     height: 90vh;
     width: 100vw;
-    background: url(/assets/mobile-herobg.svg) bottom/cover no-repeat;
-    justify-content: flex-start;
+    background: url("assets/hero-bg.svg") left/cover no-repeat;
+    justify-content: center;
     align-items: center;
     gap: 1em;
 }
 
 .left-hero h1, .left-hero p{
-    color: #FFF;
+    background-color: #ffffffb7;
+    border-radius: 30px;
 }
 
 .left-hero p{
@@ -199,7 +204,7 @@ nav{
 }
 
 .data-wrap{
-    height: 450px;
+    height: 100vh;
     width: 100vw;
     background: #0E2C25;
     gap: 2em;
@@ -222,7 +227,7 @@ nav{
     align-items: center;
     width: 100vw;
     gap: 2em;
-    background: #FFFBEC;
+    background: #0E2C25;
 }
 
 .intro-wrap div:nth-child(2){
@@ -243,6 +248,10 @@ nav{
     background: transparent url("assets/hands.svg") center/cover no-repeat;
     width: 100vw;
     height: 30vh;
+}
+
+.intro-h2, .intro-p{
+    color: #fff;
 }
 
 /* Resource Section */
@@ -268,7 +277,7 @@ nav{
     width: 90vw;
     height: 55vh;
     border-radius: 10px;
-    box-shadow: rgba(74, 79, 86, 0.06) 0px 8px 6px -4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .resources {
     gap: 4em;
@@ -295,13 +304,14 @@ nav{
 .provider-wrap .card{
     gap: 1.5rem;
     margin-bottom: 20px;
+    
 }
 .provider-img{
     width: 75vw;
     height: 60vh;
     border-radius: 500px 500px 15px 15px;
     background: url(assets/provider-img.jpg) lightgray center / cover no-repeat;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .provider-p{ 
@@ -309,6 +319,7 @@ nav{
     height: 30vh;
     border-radius: 10px;
     background: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Community Section */
@@ -319,7 +330,7 @@ nav{
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #FFFBEC url("assets/community-bg.svg") bottom/contain no-repeat ;
+    background: #f9f7eb url("assets/community-bg.svg") bottom/contain no-repeat ;
 }
 .community-contents{
     display: flex;
@@ -465,8 +476,9 @@ footer{
     .hands-img{
         height: 40vh;
     }
-    .swirl-img{
-        height: 70vh;
+    .logo-wrap{
+        width: 200px;
+        height: 100%;
     }
     .community-wrap {
         background-position: center;
@@ -495,20 +507,23 @@ footer{
     .hands-img{
         height: 50vh;
     }
+    
+
 }
 
 
+
 @media (min-width: 1024px){ 
-    .logo-img{
-        background: url(assets/yvette-logo-white.png) center/contain no-repeat;
-        width: 80px;
-        height: 80px;
-        margin-left: 135px;
+    .logo-wrap{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 100%;
     }
-    #logo{
-        color: #29180c;
-        margin-left: 10px;
-        flex-grow: 1;
+    .logo-img{
+        background: url(assets/yvette-logo.png) center/cover no-repeat;
+        width: 200px;
+        height: 100%;
     }
     .ham-menu{
         display: none;
@@ -528,6 +543,12 @@ footer{
         font-size: 20px;
         text-align: left;
     }
+    header{
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+    }
     nav{
         display: flex;
     }
@@ -535,6 +556,7 @@ footer{
         display: flex;
         align-items: center;
         gap: 2em;
+        height: 5vh;
     }
     .nav-items{
         color: #29180c;
@@ -548,7 +570,7 @@ footer{
         font: normal 400 18px "Nunito Sans", sans-serif;
         background-color: #FDB733;
         border: #FDB733 solid;
-        margin-right: 120px;
+        height: 5vh;
     }
    
     #nav-btn:hover, button:hover, #form-submit:hover{
@@ -558,7 +580,7 @@ footer{
     }
     button{
         width: 200px;
-        height: 6vh;
+        height: 40px;
         font-size: 20px;
     }
     .hero-wrap{
@@ -567,7 +589,7 @@ footer{
         width: 100vw;
     }
     .left-hero{
-        padding-left: 150px;
+        padding: 0 150px 0 0;
         justify-content: center;
         align-items: flex-start;
         background-image: none;
@@ -582,7 +604,8 @@ footer{
     }
 
     .left-hero h1, .left-hero p{
-        color: #29180c;
+        background-color: transparent;
+        border-radius: none;
         width: 380px;
         text-align: left;
     }
