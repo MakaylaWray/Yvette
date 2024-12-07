@@ -18,7 +18,7 @@
 <body>
     <div class="banner"></div>
     <header>
-        <a href="index.html"><div class="logo-img"></div></a>
+        <a href="index.html" class="logo-wrap"><div class="logo-img"></div></a>
     <div class="ham-menu">
         <span></span>
         <span></span>
@@ -48,27 +48,28 @@
   </header>
   <main id="about-page">
     <section class="hero-wrap">
-        <div class="left-hero">
-            <h2>Learn More about Yvette</h2>
-            <p>Yvette is your trusted companion, dedicated to empowering women of color to take charge 
-                of their healthcare journeys. Women of color face many frustrating challenges, but 
-                healthcare should not be one of them.</p>
-            <p>Our mission is to empower, educate, and equip women of color with the necessary tools to navigate the healthcare system, 
-                self-advocate, and take control of their well-being.</p>
-            <p>Our vision is a world where women of color feel heard, respected, and 
-                empower in every decision regarding their health and well-being.</p>
+        <h2>Learn More about Yvette</h2>
+        <div class="main-container">
+            <div class="left-hero">
+                <p>Yvette is your trusted companion, dedicated to empowering women of color to take charge 
+                    of their healthcare journeys. Women of color face many frustrating challenges, but 
+                    healthcare should not be one of them.</p>
+                <p>Our mission is to empower, educate, and equip women of color with the necessary tools to navigate the healthcare system, 
+                    self-advocate, and take control of their well-being.</p>
+                <p>Our vision is a world where women of color feel heard, respected, and 
+                    empower in every decision regarding their health and well-being.</p>
+            </div>
+            <div class="right-hero"></div>
         </div>
-        <div class="right-hero"></div>
-
     </section>
     <section class="community-wrap">
         <div class="community-contents">
             <h2>Join Our Community</h2>
             <p>Connect for Better Health: Join Our Community for Support, Resources, and Empowerment!</p>
             <div class="form-wrap">
-                <form>
-                    <input type="text" name="fname" class="input" placeholder="First Name" required>
-                    <input type="text" name="lname"class="input" placeholder="Last Name" required>
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <input type="text" name="first name" class="input" placeholder="First Name" required>
+                    <input type="text" name="last name"class="input" placeholder="Last Name" required>
                     <input type="text" name="email" class="input"  placeholder="Email Address" required>
                     <input type="submit" id="form-submit">
                 </form>

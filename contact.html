@@ -18,7 +18,7 @@
 <body>
     <div class="banner"></div>
     <header>
-    <a href="index.html"><div class="logo-img"></div></a>
+        <a href="index.html" class="logo-wrap"><div class="logo-img"></div></a>
     <div class="ham-menu">
         <span></span>
         <span></span>
@@ -55,8 +55,8 @@
                     <p> If you are in crisis, please call 911 or go to your nearest emergency room</p>
                     <p> Required fields are marked with an asterisk *</p>
                     <form method="post" action="https://webdevbasics.net/scripts/demo.php" id="contact-form">
-                            <div class="form-row"><input type="text" name="fname" required><input type="text" name="lname" required></div>
-                            <div class="form-row"><input type="email" name="emails" required><input type="tel" name="phone"></div>
+                            <div class="form-row"><input type="text" name="first name" placeholder="First Name" required><input type="text" name="last name" placeholder="Last Name"></div>
+                            <div class="form-row"><input type="email" name="email" placeholder="Email Address" required><input type="tel" name="phone" placeholder="Phone"></div>
                             <textarea required cols="20" rows="2" name="messages"></textarea>
                             <input type="submit" id="form-submit">
                     </form>
@@ -69,9 +69,9 @@
                 <h2>Join Our Community</h2>
                 <p>Connect for Better Health: Join Our Community for Support, Resources, and Empowerment!</p>
                 <div class="form-wrap">
-                    <form>
-                        <input type="text" name="fname" class="input" placeholder="First Name" required>
-                        <input type="text" name="lname"class="input" placeholder="Last Name" required>
+                    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                        <input type="text" name="first name" class="input" placeholder="First Name" required>
+                        <input type="text" name="last name"class="input" placeholder="Last Name" required>
                         <input type="text" name="email" class="input"  placeholder="Email Address" required>
                         <input type="submit" id="form-submit">
                     </form>
